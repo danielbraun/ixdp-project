@@ -1,0 +1,5 @@
+.ropeproject
+sqlite.db
+venv
+*.pyc
+*.swp
