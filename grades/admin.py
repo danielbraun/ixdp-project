@@ -1,8 +1,6 @@
 from django.contrib import admin
 
-import models
-
-
+from grades import models
 admin.site.register(models.Course)
 
 
