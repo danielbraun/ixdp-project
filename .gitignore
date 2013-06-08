@@ -3,3 +3,4 @@ sqlite.db
 venv
 *.pyc
 *.swp
+.DS_Store

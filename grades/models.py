@@ -1,6 +1,6 @@
-from django.utils.translation import ugettext as _
-from django.db import models
 from django.contrib.auth.models import User
+from django.db import models
+from django.utils.translation import ugettext as _
 
 
 class Course(models.Model):
@@ -39,6 +39,10 @@ class Class(models.Model):
         return u'%s - %s (%s-%s)' % (self.course, self.get_week_day_display(),
                                      self.start_time, self.end_time)
 
+    def duration_in_minutes(self):
+        return (self.end_time.hour * 60 + self.end_time.minute) -\
+               (self.start_time.hour * 60 + self.start_time.minute)
+
 
 class ClassEvaluation(models.Model):
     related_class = models.ForeignKey('Class', verbose_name=_('Class'))
@@ -49,3 +53,4 @@ class ClassEvaluation(models.Model):
     class Meta:
         verbose_name = _('Class Evaluation')
         verbose_name_plural = _('Class Evaluations')
+        ordering = ['related_class__start_time']

@@ -1,12 +1,15 @@
 from django.conf.urls import patterns, include, url
-
-from django.views.generic.base import TemplateView
 from django.contrib import admin
+from django.views.generic.list import ListView
+
+from grades.models import ClassEvaluation
+
+
 admin.autodiscover()
 
 urlpatterns = patterns(
     '',
-    url(r'^$', TemplateView.as_view(template_name='base.html')),
+    url(r'^$', ListView.as_view(model=ClassEvaluation)),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )

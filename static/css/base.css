@@ -1,0 +1,16 @@
+td {
+	height: 120px;
+}
+
+.schedule {
+	border-collapse: collapse;
+}
+
+td div {
+	height: 100%;
+	width: 100%;
+}
+
+tr td {
+	text-align: left;
+}
