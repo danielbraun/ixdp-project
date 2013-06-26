@@ -1,6 +1,8 @@
 from django.contrib.auth.models import User
 from django.db import models
 from django.utils.translation import ugettext as _
+from .utils import normalize_grade
+import datetime
 
 
 class Course(models.Model):
@@ -24,6 +26,7 @@ class Class(models.Model):
         (5, _('Thursday')),
         (6, _('Friday')),
     )
+    DAY_START = datetime.time(8, 0)
 
     course = models.ForeignKey('Course', verbose_name=_('course'))
     start_time = models.TimeField(_('Class Start Time'))
@@ -43,12 +46,19 @@ class Class(models.Model):
         return (self.end_time.hour * 60 + self.end_time.minute) -\
                (self.start_time.hour * 60 + self.start_time.minute)
 
+    def minutes_since_day_start(self):
+        return (self.start_time.hour - self.DAY_START.hour) * 60 +\
+               (self.start_time.minute - self.DAY_START.minute)
+
 
 class ClassEvaluation(models.Model):
     related_class = models.ForeignKey('Class', verbose_name=_('Class'))
     grade = models.SmallIntegerField(_('Grade'),
                                      choices=[(i, i) for i in range(101)])
     student = models.ForeignKey(User, editable=False)
+
+    def normalized_grade(self):
+        return normalize_grade(self.grade)
 
     class Meta:
         verbose_name = _('Class Evaluation')

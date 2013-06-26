@@ -1,16 +1,18 @@
-td {
-	height: 120px;
+[week-day="1"] {
+	fill: #F5808E;
 }
-
-.schedule {
-	border-collapse: collapse;
+[week-day="2"] {
+	fill: #5ACDA0;
 }
-
-td div {
-	height: 100%;
-	width: 100%;
+[week-day="3"] {
+	fill: #B53B9B;
 }
-
-tr td {
-	text-align: left;
+[week-day="4"] {
+	fill: #F3B964;
+}
+[week-day="5"] {
+	fill: #E4A8D2;
+}
+[week-day="6"] {
+	fill: #F8F57C;
 }

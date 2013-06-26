@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% load mathfilters %}
+{% block body %}
+
+{% regroup object_list by related_class.week_day as week_days %}
+
+
+<table class="schedule" border="1">
+	<caption>מערכת שעות</caption>
+	<thead>
+		<tr>
+			<th>שעה/יום</th>
+			<th>א</th>
+			<th>ב</th>
+			<th>ג</th>
+			<th>ד</th>
+			<th>ה</th>
+			<th>ו</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>9:00</td>
+			<td rowspan="8" style="width: {{ object_list.count|mul:2}}px;">
+				<div>
+					<svg>
+						{% for grade in object_list %}
+							<line x1="{{ object_list.count|mul:2|sub:forloop.counter0|sub:forloop.counter0 }}"
+								  y1="{{ grade.related_class.start_time.hour|sub:8|mul:60 }}"
+								  x2="{{ object_list.count|mul:2|sub:forloop.counter0|sub:forloop.counter0 }}"
+								  y2="{{ grade.related_class.start_time.hour|sub:8|mul:60|add:grade.related_class.duration_in_minutes }}"
+								  stroke="rgb(0, {{ 255|div:100|mul:grade.grade }}, 0)"
+								  stroke-width="2"
+								  start_time="{{ grade.related_class.start_time }}"
+								  end_time="{{ grade.related_class.end_time }}"
+							/>	
+						{% endfor %}
+						
+					</svg>	
+				</div>
+			</td>
+		</tr>
+		<tr><td>11:00</td></tr>
+		<tr><td>13:00</td></tr>
+		<tr><td>15:00</td></tr>
+		<tr><td>17:00</td></tr>
+		<tr><td>19:00</td></tr>
+		<tr><td>21:00</td></tr>
+		<tr><td>23:00</td></tr>
+	</tbody>
+</table>
+{% endblock body %}
