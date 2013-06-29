@@ -2,15 +2,28 @@
 {% load mathfilters %}
 
 {% block body %}
+	{% regroup object_list|dictsort:"related_class.week_day" by related_class.get_week_day_display as week_days %}
+	<ul style="float:right;">
+	{% for day in week_days %}
+		<li>
+			<input type="checkbox" name="week_day" id="day_{{ day.grouper }}" value="{{ day.grouper }}" checked>
+			<label for="day_{{ day.grouper }}">{{ day.grouper }}</label>
+		</li>
+	{% endfor %}
+	</ul>
+
+
 	{% with width=800 height=600 top_grade=100 bottom_grade=60 %}
 		<svg height={{ height }} width={{ width }}>
 			{% for grade in object_list %}
 				<circle
 					cx="{{ grade.related_class.minutes_since_day_start }}"
 					cy="{{ grade.normalized_grade|mul:height }}"
-					r="15"
+					r="20"
 					week-day="{{ grade.related_class.week_day }}"
-				/>
+					week-day-verbose="{{ grade.related_class.get_week_day_display }}">
+					<title>{{ grade.related_class }}<br>{{ grade.grade }}</title>
+				</circle>
 			{% endfor %}
 		</svg>
 	{% endwith %}
