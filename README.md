@@ -11,11 +11,11 @@ Admin interface at:
 
 Contributing
 ============
-git clone https://github.com/danielbraun/ixdp-project.git
-cd ixdp-project
-virtualenv venv
-source venv/bin/activate
-pip install -r requirements.txt
-./manage.py runserver
+    git clone https://github.com/danielbraun/ixdp-project.git
+    cd ixdp-project
+    virtualenv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    ./manage.py runserver
 
 Enjoy!
