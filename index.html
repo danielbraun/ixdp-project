@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Base</title>
+		<link rel="stylesheet" type="text/css" href="Base_files/bootstrapSwitch.css">
+		<script src="Base_files/jquery.js" type="text/javascript"></script>
+		<script src="Base_files/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="Base_files/bootstrap-tooltip.js" type="text/javascript"></script>
+	<meta name="author" content="Mattia Larentis">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;" />
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
+    <link rel="stylesheet" href="static/stylesheets/bootstrapSwitch.css">
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css">
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/docs.css">
+    <link rel="stylesheet" href="Base_files/base.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header dir="rtl">
+				<img src="images/logo.gif">
+				<p id="titleText">הזמן לבדוק איך באמת נראתה <br> תקופת הלימודים שלך...</p>
+			</header>
+			<nav>
+				<p id="sunday">ראשון</p>
+				<div class="switch" data-on="primary1" data-off="info">
+           	    	<input name="week_day" id="day_ראשון" value="ראשון" type="checkbox" checked />
+        		</div>
+        		<p id="sunday">שני</p>
+				<div class="switch" data-on="primary2" data-off="info">
+				    <input name="week_day" id="day_שני" value="שני" checked="checked" type="checkbox" checked />
+				</div>
+				<p id="sunday">שלישי</p>
+				<div class="switch" data-on="primary3" data-off="info">
+				    <input name="week_day" id="day_שלישי" value="שלישי" checked="checked" type="checkbox" checked />
+				</div>
+				<p id="sunday">רביעי</p>
+				<div class="switch" data-on="primary4" data-off="info">
+				    <input name="week_day" id="day_רביעי" value="רביעי" checked="checked" type="checkbox" checked />
+				</div>
+				<p id="sunday">חמישי</p>
+				<div class="switch" data-on="primary5" data-off="info">
+				    <input name="week_day" id="day_חמישי" value="חמישי" checked="checked" type="checkbox" checked />
+				</div>
+				<p id="sunday">שישי</p>
+				<div class="switch" data-on="primary6" data-off="info">
+				    <input name="week_day" id="day_שישי" value="שישי" checked="checked" type="checkbox" checked />
+				</div>
+			</nav>
+		<!--<div style="position:relative;"-->
+		<section>
+			<h1 class="topGrade">ציון 100</h1>
+			<h1 class="morning">08:30</h1>
+			<h1 class="bottomGrade">ציון 60</h1>
+			<h1 class="evening">20:00</h1>
+			<svg>
+				
+					<circle cx="20" cy="175" r="15" week-day="4" week-day-verbose="רביעי">
+						<title>ארגון ותכנות המחשב - רביעי (08:00:00-09:30:00)<br>87</title>
+					</circle>
+				
+					<circle cx="20" cy="205" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>אנגלית טכנית - ראשון (08:00:00-09:30:00)<br>85</title>
+					</circle>
+				
+					<circle cx="20" cy="565" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>מבוא לאלגוריתמים - חמישי (08:00:00-11:00:00)<br>61</title>
+					</circle>
+				
+					<circle cx="20" cy="280" r="15" week-day="3" week-day-verbose="שלישי">
+						<title>מסדי נתונים - שלישי (08:00:00-09:30:00)<br>80</title>
+					</circle>
+				
+					<circle cx="20" cy="400" r="15" week-day="4" week-day-verbose="רביעי">
+						<title>מבוא להסתברות וסטטיסטיקה - רביעי (08:00:00-10:30:00)<br>72</title>
+					</circle>
+				
+					<circle cx="20" cy="115" r="15" week-day="6" week-day-verbose="שישי">
+						<title>שיטות וכלים בפיתוח אתרי אינטרנט - שישי (08:00:00-11:30:00)<br>91</title>
+					</circle>
+				
+					<circle cx="80" cy="130" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>מיחשוב לביש - ראשון (09:00:00-12:00:00)<br>90</title>
+					</circle>
+				
+					<circle cx="80" cy="580" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>מבני נתונים - חמישי (09:00:00-11:30:00)<br>60</title>
+					</circle>
+				
+					<circle cx="80" cy="580" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>אוטומטים ושפות פורמליות - חמישי (09:00:00-11:30:00)<br>60</title>
+					</circle>
+				
+					<circle cx="80" cy="475" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>חישוביות וסיבוכיות - חמישי (09:00:00-11:30:00)<br>67</title>
+					</circle>
+				
+					<circle cx="140" cy="280" r="15" week-day="2" week-day-verbose="שני">
+						<title>מערכות ספרתיות - שני (10:00:00-11:30:00)<br>80</title>
+					</circle>
+				
+					<circle cx="140" cy="25" r="15" week-day="6" week-day-verbose="שישי">
+						<title>מבוא למציאות מדומה - שישי (10:00:00-13:30:00)<br>97</title>
+					</circle>
+				
+					<circle cx="140" cy="265" r="15" week-day="3" week-day-verbose="שלישי">
+						<title>מבנה מחשבים - שלישי (10:00:00-12:30:00)<br>81</title>
+					</circle>
+				
+					<circle cx="140" cy="490" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>תורת הקומפילציה - ראשון (10:00:00-12:30:00)<br>66</title>
+					</circle>
+				
+					<circle cx="200" cy="325" r="15" week-day="4" week-day-verbose="רביעי">
+						<title>תכנות מערכות ומערכת UNIX - רביעי (11:00:00-13:30:00)<br>77</title>
+					</circle>
+				
+					<circle cx="260" cy="475" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>מתמטיקה בדידה וקומבינטוריקה - חמישי (12:00:00-13:30:00)<br>67</title>
+					</circle>
+				
+					<circle cx="260" cy="580" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>לוגיקה מתמטית ותורת הקבוצות - חמישי (12:00:00-13:30:00)<br>60</title>
+					</circle>
+				
+					<circle cx="260" cy="370" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>תכנות מונחה עצמים - ראשון (12:00:00-16:30:00)<br>74</title>
+					</circle>
+				
+					<circle cx="260" cy="25" r="15" week-day="3" week-day-verbose="שלישי">
+						<title>ג'אווה - שלישי (12:00:00-16:30:00)<br>97</title>
+					</circle>
+				
+					<circle cx="260" cy="355" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>תקשורת ותקשוב 2 - חמישי (12:00:00-14:30:00)<br>75</title>
+					</circle>
+				
+					<circle cx="260" cy="-20" r="15" week-day="3" week-day-verbose="שלישי">
+						<title>עיצוב גיימיפיקיישן - שלישי (12:00:00-15:30:00)<br>100</title>
+					</circle>
+				
+					<circle cx="320" cy="130" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>פיתוח ועיצוב בין תחומי של ממשקי מחשב חדשים  - ראשון (13:00:00-16:00:00)<br>90</title>
+					</circle>
+				
+					<circle cx="320" cy="175" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>מערכות מחשב מקביליות - חמישי (13:00:00-15:30:00)<br>87</title>
+					</circle>
+				
+					<circle cx="320" cy="430" r="15" week-day="2" week-day-verbose="שני">
+						<title>מערכות הפעלה - שני (13:00:00-16:30:00)<br>70</title>
+					</circle>
+				
+					<circle cx="320" cy="280" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>פיתוח ועיצוב בין תחומי של ממשקי מחשב חדשים  - ראשון (13:00:00-15:30:00)<br>80</title>
+					</circle>
+				
+					<circle cx="320" cy="310" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>מערכות מחשב מקביליות - חמישי (13:00:00-15:30:00)<br>78</title>
+					</circle>
+				
+					<circle cx="380" cy="25" r="15" week-day="2" week-day-verbose="שני">
+						<title>מבוא למדעי המחשב - שני (14:00:00-16:30:00)<br>97</title>
+					</circle>
+				
+					<circle cx="380" cy="100" r="15" week-day="2" week-day-verbose="שני">
+						<title>מבוא למדעי המחשב - שני (14:00:00-16:30:00)<br>92</title>
+					</circle>
+				
+					<circle cx="380" cy="580" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>משוואות דיפרנציאליות - חמישי (14:00:00-16:30:00)<br>60</title>
+					</circle>
+				
+					<circle cx="440" cy="160" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>מבוא למערכות משובצות מחשב - חמישי (15:00:00-17:30:00)<br>88</title>
+					</circle>
+				
+					<circle cx="440" cy="235" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>גרפיקה ממוחשבת - חמישי (15:00:00-17:30:00)<br>83</title>
+					</circle>
+				
+					<circle cx="500" cy="445" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>פיסיקה 2 - ראשון (16:00:00-17:30:00)<br>69</title>
+					</circle>
+				
+					<circle cx="500" cy="280" r="15" week-day="3" week-day-verbose="שלישי">
+						<title>שפות תכנות - שלישי (16:00:00-18:30:00)<br>80</title>
+					</circle>
+				
+					<circle cx="500" cy="565" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>פיסיקה 1 (מכניקה) - ראשון (16:00:00-17:30:00)<br>61</title>
+					</circle>
+				
+					<circle cx="500" cy="520" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>מערכות קבצים - ראשון (16:00:00-18:30:00)<br>64</title>
+					</circle>
+				
+					<circle cx="500" cy="265" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>ניתוח ותיכון מונחה עצמים - ראשון (16:00:00-15:30:00)<br>81</title>
+					</circle>
+				
+					<circle cx="500" cy="580" r="15" week-day="3" week-day-verbose="שלישי">
+						<title>שפות תכנות - שלישי (16:00:00-18:30:00)<br>60</title>
+					</circle>
+				
+					<circle cx="500" cy="235" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>סמינר בהנדסת תוכנה - חמישי (16:00:00-18:30:00)<br>83</title>
+					</circle>
+				
+					<circle cx="560" cy="370" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>תכן לוגי - ראשון (17:00:00-19:30:00)<br>74</title>
+					</circle>
+				
+					<circle cx="620" cy="175" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>חדו"א מוגבר 2 - ראשון (18:00:00-19:30:00)<br>87</title>
+					</circle>
+				
+					<circle cx="620" cy="430" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>חדו"א מוגבר 1 - ראשון (18:00:00-19:30:00)<br>70</title>
+					</circle>
+				
+					<circle cx="620" cy="520" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>חדו"א מוגבר 2 - ראשון (18:00:00-19:30:00)<br>64</title>
+					</circle>
+				
+					<circle cx="620" cy="250" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>מבוא לתכנות מערכות - חמישי (18:00:00-19:30:00)<br>82</title>
+					</circle>
+				
+					<circle cx="620" cy="385" r="15" week-day="5" week-day-verbose="חמישי">
+						<title>אלגברה לינארית - חמישי (18:00:00-19:30:00)<br>73</title>
+					</circle>
+				
+					<circle cx="620" cy="205" r="15" week-day="4" week-day-verbose="רביעי">
+						<title>על מדע, אמנות ומה שבניהם - רביעי (18:00:00-19:30:00)<br>85</title>
+					</circle>
+				
+					<circle cx="620" cy="430" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>אתיקה ודיני מחשבים - ראשון (18:00:00-21:30:00)<br>70</title>
+					</circle>
+				
+					<circle cx="620" cy="430" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>מבוא לאימות תוכנה - ראשון (18:00:00-21:30:00)<br>70</title>
+					</circle>
+				
+					<circle cx="680" cy="580" r="15" week-day="1" week-day-verbose="ראשון">
+						<title>שיטות בהנדסת תוכנה - ראשון (19:00:00-20:30:00)<br>60</title>
+					</circle>
+				</svg>
+		</section>
+		<!-- </div> -->
+	
+		<div class="clear"></div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="Base_files/app.js" type="text/javascript"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+<script src="static/js/bootstrapSwitch.js"></script>
+<script>
+    window.prettyPrint && prettyPrint();
+    $('#mySwitch').on('switch-change', function (e, data) {
+        var $el = $(data.el)
+            , value = data.value;
+        console.log(e, $el, value);
+    });
+
+    $('#toggle-state-switch-button').on('click', function () {
+        $('#toggle-state-switch').bootstrapSwitch('toggleState');
+    });
+
+    $('#toggle-state-switch-button-on').on('click', function () {
+        $('#toggle-state-switch').bootstrapSwitch('setState', true);
+    });
+
+    $('#toggle-state-switch-button-off').on('click', function () {
+        $('#toggle-state-switch').bootstrapSwitch('setState', false);
+    });
+
+    $('#btn-destroy-switch').on('click', function () {
+        $('#destroy-switch').bootstrapSwitch('destroy');
+        $(this).remove();
+    });
+
+    $('#btn-create').on('click', function () {
+        $('#create-switch').wrap('<div class="switch" />').parent().bootstrapSwitch();
+        $(this).remove()
+    });
+
+    $('#btn-is-active-switch').on('click', function () {
+        alert($('#disable-switch').bootstrapSwitch('isActive'));
+    });
+
+    $('#btn-toggle-activation-switch').on('click', function () {
+        $('#disable-switch').bootstrapSwitch('toggleActivation');
+    });
+
+    $('#btn-disable-switch').on('click', function () {
+        $('#disable-switch').bootstrapSwitch('setActive', false);
+    });
+
+    $('#btn-activate-switch').on('click', function () {
+        $('#disable-switch').bootstrapSwitch('setActive', true);
+    });
+</script>
+	
+		</div>
+	</body>
+</html>

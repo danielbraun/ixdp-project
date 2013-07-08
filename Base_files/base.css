@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: almoni-tzar-aaa;
+	src: url(almoni-tzar-aaa-regular.otf);
+}
+body{
+	font-family: almoni-tzar-aaa, sans-serif;
+	color: gray;
+}
+#wrapper{
+	width: 1000px;
+	margin: 0 auto;
+}
+.clear{
+	clear: both;
+}
+header{
+	width: 250px;
+	height: 135px;
+	float: right;
+	position: relative;
+}
+header img {
+	width: 100%;
+	height: 100%;
+}
+header p {
+	font-size: 22px;
+	top: 25px;
+}
+#titleText{
+	font-size: 22px;
+	top: 25px;
+}
+nav{
+	width: 200px;
+	position: relative;
+	left: 350px;
+	top: 240px;
+	float: right;
+}
+nav ul{
+	list-style: none;
+
+}
+nav a:link, nav a:visited {
+	width: 55px;
+	height: 25px;
+	float: right;
+	margin-left: 40px;
+	margin-bottom: 50px;
+	position: relative;
+	right: 0;
+}
+nav p {
+	font-size: 18px;
+}
+section{
+	width: 750px;
+	float: left;
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+h1{
+	font-size: 30px;
+}
+.topGrade, .bottomGrade, .morning, .evening{
+	position: absolute;
+	text-decoration: underline;
+}
+.topGrade{
+	left: 280px;
+	top: -390px;
+}
+.morning{
+	left: -50px;
+	top: -60px;
+}
+.bottomGrade{
+	left: 285px;
+	top: 210px;
+}
+.evening{
+	left: 670px;
+	top: -65px;
+}
+svg {
+	width: 600px;
+	height: 520px;
+	/*border: 1px solid black;*/
+	position: relative;
+	left: 45px;
+	top: -350px;
+}
+[week-day="1"] {
+	fill: #5bc0de;
+}
+[week-day="2"] {
+	fill: #5ACDA0;
+}
+[week-day="3"] {
+	fill: #B53B9B;
+}
+[week-day="4"] {
+	fill: #F3B964;
+}
+[week-day="5"] {
+	fill: #E4A8D2;
+}
+[week-day="6"] {
+	fill: #F8F57C;
+}
+input[type=checkbox] {
+	margin-bottom: 20px;
+}
