@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-25 19:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models.py:7
+msgid "name"
+msgstr "שם"
+
+#: models.py:14
+msgid "Course"
+msgstr "שיעור"
+
+#: models.py:15
+msgid "Courses"
+msgstr "שיעורים"
+
+#: models.py:20
+msgid "Sunday"
+msgstr "ראשון"
+
+#: models.py:21
+msgid "Monday"
+msgstr "שני"
+
+#: models.py:22
+msgid "Tuesday"
+msgstr "שלישי"
+
+#: models.py:23
+msgid "Wednesday"
+msgstr "רביעי"
+
+#: models.py:24
+msgid "Thursday"
+msgstr "חמישי"
+
+#: models.py:25
+msgid "Friday"
+msgstr "שישי"
+
+#: models.py:28
+msgid "course"
+msgstr "שיעור"
+
+#: models.py:29
+msgid "Class Start Time"
+msgstr "זמן תחילת שיעור"
+
+#: models.py:30
+msgid "Class End Time"
+msgstr "זמן סיום שיעור"
+
+#: models.py:31
+msgid "Week Day"
+msgstr "יום בשבוע"
+
+#: models.py:35 models.py:40
+msgid "Class"
+msgstr "כיתה"
+
+#: models.py:36
+msgid "Classes"
+msgstr "כיתות"
+
+#: models.py:41
+msgid "Grade"
+msgstr "ציון"
+
+#: models.py:46
+msgid "Class Evaluation"
+msgstr "ציון עבור שיעור"
+
+#: models.py:47
+msgid "Class Evaluations"
+msgstr "ציונים עבור שיעורים"
